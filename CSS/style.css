@@ -71,6 +71,29 @@ nav .nav-right-section .sign-in-button img{
     margin-left: 22px;
 }
 
+nav .nav-right-section li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: bakcground-color 0.2s;
+}
+
+nav .nav-right-section li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-right-section li a:active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.sign-in-button a {
+    width: 45px !important;
+    height: 45px !important;
+}
+
 .sign-in-button img:hover {
   background-color: #a5a8a5; 
   border-radius: 50%;
