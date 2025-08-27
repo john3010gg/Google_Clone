@@ -30,6 +30,14 @@ header nav .nav-right-section{
     align-items: center;
 }
 
+header nav .nav-right-section .gmail:hover{
+    text-decoration: underline;
+}
+
+header nav .nav-right-section .images-text:hover{
+    text-decoration: underline;
+}
+
 nav .nav-right-section a{
     margin-right: 11px;
     gap: 20px;
@@ -63,20 +71,202 @@ nav .nav-right-section .sign-in-button img{
     margin-left: 22px;
 }
 
-.sign-in-button:hover {
+.sign-in-button img:hover {
   background-color: #a5a8a5; 
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
 }
 
-.sign-in-button:active {
+.sign-in-button img:active {
   background-color: #a3a3a3; 
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); 
   transform: translateY(1px); 
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
 }    
 
+main{
+    margin-top: 150px;
+    text-align: center;
+}
 
+main .logo-section{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .logo-section img{
+    width: 272px;
+    height: 92px;
+}
+
+main .search-section{
+    width: 746px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .search-section .search-box{
+    width: 746px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+main .search-section input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+main .search-section .search-box:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.4);
+    border-color: #dfe1e500;
+}
+
+main .search-section .search-icon{
+    background-image: url(https://img.icons8.com/android/24/00000/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+main .search-section .micro-icon{
+    background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+main .search-section .images-icon{
+    background-image: url(../assets/Google_Lens_Icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+main .buttons-section {
+    margin: 30px auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(112px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+    max-width: 600px; 
+}
+
+main .buttons-section .shortcut {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 112px; 
+    height: 112px; 
+    text-decoration: none;
+    color: #3c4043; 
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: box-shadow 0.2s, background-color 0.2s; 
+}
+
+main .buttons-section .shortcut img {
+    width: 30px; 
+    height: 30px;
+    margin-bottom: 8px; 
+    object-fit: contain; 
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 1px 3px rgba(32, 33, 36, 0.1);
+    
+}
+
+main .buttons-section .shortcut span {
+    display: block;
+    max-width: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+main .buttons-section .shortcut:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); 
+    background-color: #f1f3f4; 
+    border-radius: 8px;
+}
+
+main .buttons-section .shortcut:active {
+    background-color: #e8eaed; 
+    box-shadow: 0 1px 3px rgba(32, 33, 36, 0.2);
+}
+
+footer {
+    position: fixed; 
+    bottom: 15px; 
+    right: 15px; 
+    margin: 0; 
+    z-index: 100; 
+}
+
+footer .customize-button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #CEE4FD; 
+    border: 1px solid #CEE4FD; 
+    border-radius: 30px; 
+    box-shadow: 0 1px 3px rgba(32, 33, 36, 0.1); 
+    padding: 8px 16px; 
+    text-decoration: none; 
+    color: #001F49; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500; 
+    transition: box-shadow 0.2s, background-color 0.2s; 
+}
+
+footer .customize-button:hover {
+    background-color: #f1f3f4; 
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); 
+}
+
+footer .customize-button:active {
+    background-color: #e8eaed; 
+    box-shadow: 0 1px 3px rgba(32, 33, 36, 0.2); 
+}
+
+footer .customize-button .pencil {
+    background-image: url(../assets/edit_24dp_434746_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; 
+}
+
+footer .customize-button .button-text {
+    line-height: 20px; 
+}
